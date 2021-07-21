@@ -209,13 +209,20 @@
     .menu-content-frame .left-menu{
       width: 100%;
       height:100%;
-      padding:5% 0 0 0;
-      text-transform: uppercase;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
     }
-    .menu-content-frame .menu-footer{
+    .menu-content-frame .social-icon{
       display:none;
     }
+    .menu-content-frame .menu-footer{
+      font-size: 0.9rem;
+      font-family: 'Montserrat' , sans-serif;
+      font-weight: 700;
+    }
     .menu-content-frame .left-menu .menu-list a{
+      text-transform: uppercase;
       position:relative;
       display:inline-block;
       color:#000000;
@@ -283,12 +290,7 @@
       }
     }
     @media(max-width:500px){
-      .menu-content-frame .left-menu {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-      }
-      .menu-content-frame .menu-footer{
+      .menu-content-frame .social-icon{
         display:block;
       }
       .menuexpand .logo {
@@ -347,11 +349,17 @@
                   <a class="nav-link" href="#playgound">my playgound</a>
                 </li>
               </ul>
+              <div class="social-icon">
+                <a href="" traget="_blank"><img src="sources/social/line.png"/></a>
+                <a href="" traget="_blank"><img src="sources/social/linkedin.png"/></a>
+                <a href="" traget="_blank"><img src="sources/social/codepen.png"/></a>
+              </div>
             </div>
             <div class="menu-footer">
-              <a href="" traget="_blank"><img src="sources/social/line.png"/></a>
-              <a href="" traget="_blank"><img src="sources/social/linkedin.png"/></a>
-              <a href="" traget="_blank"><img src="sources/social/codepen.png"/></a>
+              <p>
+                093-587-9944<br>
+                infx@live.se
+              </p>
             </div>
           </div>
           <div class="right-menu"></div>
