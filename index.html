@@ -20,6 +20,7 @@
     }
     body{
       padding:0px 40px;
+      position:relative;
     }
     .social{
       position:fixed;
@@ -27,8 +28,9 @@
       right:10px;
       transform: translate(0, -50%);
       display: grid;
-      grid-template-columns: 1;
       grid-row-gap: 10px;;
+      z-index: 11;
+      transition: all .2s ease-in-out;
     }
     .social a{
       display: block;
@@ -45,6 +47,7 @@
       z-index: 10;
       padding:10px 40px;
       background-color:#ffffff;
+      transition: all .2s ease-in-out;
     }
     .logo a{
       font-family: 'Montserrat', sans-serif;
@@ -63,7 +66,6 @@
       color:#000000;
       background-size: 0 100%;
     }
-
     .menu-frame{
       cursor: pointer;
       display: flex;
@@ -73,6 +75,7 @@
       transform: translate(0, -50%);
       color:#adadad;
       z-index: 10;
+      transition: all .2s ease-in-out;
     }
     .menu-icon .icon{
       align-self:center;
@@ -142,9 +145,8 @@
     }
     .menuexpand .menu-content{
       width:100%;
-      padding:50px 45px;
       pointer-events: unset;
-      padding:50px 45px;
+      padding:50px 100px;
     }
     .menuexpand .menu-text div{
       opacity: 0;
@@ -175,7 +177,7 @@
       top:0;
       left:0;
       pointer-events: none;
-      transition: all 0.2s ease-in-out;
+      transition: all 0.35s ease-in-out;
     }
     .menuehover .menu-content{
       width:100px;
@@ -188,11 +190,77 @@
       transform: translate(-50%, -50%);
     }
     .menuexpand .menu-content-frame{
-      width:90%;
+      width:calc(100vw - 200px);
       height:80%;
-      background-color:red;
+    }
+    .menuexpand .logo {
+      padding: 140px 100px 0px 100px;
+    }
+    .menuexpand .social{
+      right:45px;
+    }
+    .menuexpand .menu-frame{
+      left:35px;
+    }
+    .menu-content-frame{
+      opacity: 0;
+      pointer-events: none;
+      position:relative;
+    }
+    .menu-content-frame .left-menu{
+      width: 100%;
+      height:100%;
+      padding:5% 0 0 0;
+      text-transform: uppercase;
+    }
+    .menu-content-frame .left-menu .menu-list a{
+      position:relative;
+      display:inline-block;
+      color:#000000;
+      text-decoration: unset;
+      font-size: 2.5rem;
+      font-family: 'Montserrat' , sans-serif;
+      font-weight: 700;
+      padding:0px;
+      text-shadow: 2px 1px 0px rgb(255 0 162), -2px 1px 0px rgb(0 225 255);
+      transition: all 0.3s ease-in-out;
+    }
+    .menu-content-frame .left-menu .menu-list a.active{
+      color:#ffffff;
+    }
+    .menu-content-frame .left-menu .menu-list a.active:before{
+      content: "";
+      position: absolute;
+      bottom: 0.5rem;
+      left: -5%;
+      transition: all 0.25s ease-in-out;
+      width: 110%;
+      height: 2.6rem;
+      z-index: -1;
+      background-color: #000000;
+    }
+    .menu-content-frame .left-menu #navbarspy{
+      list-style: none;
+      padding-left:0;
+    }
+    .menu-content-frame .right-menu{
+      width: 60%;
+      height:100%;
+      position:absolute;
+      right:0%;
+      top:0;
+      background-color:#000000;
+      -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+      clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+      z-index:-1;
+    }
+    .menuexpand .menu-content-frame {
+      opacity: 1;
+      pointer-events: unset;
     }
     /* END Menu expand */
+
+
     </style>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -203,11 +271,34 @@
 
     <title>Hello, world!</title>
   </head>
-  <body>
-
+  <body data-bs-spy="scroll" data-bs-target="#navbarspy" data-bs-offset="50">
     <div class="menu-content">
       <div class="menu-content-frame">
+          <div class="left-menu">
+            <div class="menu-list">
+              <ul id="navbarspy">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">about me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#playgound">my playgound [underconstruction]</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-footer">
 
+            </div>
+          </div>
+          <div class="right-menu"></div>
       </div>
     </div>
     <header>
@@ -239,7 +330,7 @@
 
     <style>
     /* Intro section */
-    #introduction{
+    #home{
         margin-top:47px;
         height:calc(100vh - 48px);
         position:relative;
@@ -261,6 +352,7 @@
       font-size: 2.5rem;
       line-height: 1;
       margin-bottom:20px;
+      text-shadow: 2px 1px 0px rgb(255 0 162), -2px 1px 0px rgb(0 225 255);
     }
     .intro-details .intro-name{
       display: inline-block;
@@ -515,7 +607,7 @@
     /* END Intro section */
     </style>
 
-    <section id="introduction">
+    <section id="home">
         <div class="intro-frame">
            <div class="intro-details">
              <div class="">
@@ -533,7 +625,7 @@
     </section>
 
 
-    <section id="port-header">
+    <section id="portfolio">
       <div class="port-banner">
         <img src="sources/white.png">
       </div>
@@ -554,8 +646,6 @@
             var url = String("url('sources/profile/profile-"+random+".jpg')");
             $('.intro-pic').attr('style', "background:"+url+";background-position: 50% 50%;background-size: cover;background-repeat: no-repeat;");
           }
-
-
           $(".menu-frame").on('click', function(){
             $("body").toggleClass('menuexpand');
             $("body").removeClass('menuehover');
@@ -594,6 +684,14 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    <script>
+    $(".menu-content-frame .left-menu .menu-list a").on('click', function(){
+      $("body").removeClass("menuexpand");
+    });
+    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      target: '#navbarspy'
+    });
+    </script>
 
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
