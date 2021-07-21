@@ -234,6 +234,32 @@
       text-shadow: 1.5px 1px 0px rgb(255 0 162), -1.5px 1px 0px rgb(0 225 255);
       transition: all 0.3s ease-in-out;
     }
+    .menu-content-frame .left-menu .menu-list a:hover{
+      color:#ffffff;
+      transition: all 0.3s ease-in-out;
+    }
+    .menu-content-frame .left-menu .menu-list a:before{
+      content: "";
+      position: absolute;
+      bottom: -100%;
+      left: -100%;
+      transition: all 0.25s ease-in-out;
+      width: 0%;
+      height: 0rem;
+      z-index: -1;
+      background-color: #000000;
+    }
+    .menu-content-frame .left-menu .menu-list a:hover:before{
+      content: "";
+      position: absolute;
+      bottom: 0.5rem;
+      left: -5%;
+      transition: all 0.25s ease-in-out;
+      width: 110%;
+      height: 2.6rem;
+      z-index: -1;
+      background-color: #000000;
+    }
     .menu-content-frame .left-menu .menu-list a.active{
       color:#ffffff;
     }
@@ -750,7 +776,7 @@
 
     <script>
     $(".menu-content-frame .left-menu .menu-list .nav-link").on('click', function(){
-      $("body").removeClass("menuexpand");
+        $("body").removeClass("menuexpand");
     });
     var scrollSpy = new bootstrap.ScrollSpy(document.body, {
       target: '#navbarspy'
