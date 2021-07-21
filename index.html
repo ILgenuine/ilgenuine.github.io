@@ -167,7 +167,6 @@
     .menuexpand .menu-frame .line:nth-child(3) {
       transform: rotate(135deg) translate(-3px, 4px);
     }
-
     .menu-content{
       position:fixed;
       width:0%;
@@ -212,6 +211,9 @@
       height:100%;
       padding:5% 0 0 0;
       text-transform: uppercase;
+    }
+    .menu-content-frame .menu-footer{
+      display:none;
     }
     .menu-content-frame .left-menu .menu-list a{
       position:relative;
@@ -265,13 +267,13 @@
       .menu-content-frame .left-menu .menu-list a.active:before{
         height: 2.1rem;
       }
+    }
+    @media(max-width:768px){
       .menu-content-frame .right-menu{
         width: 20%;
         -webkit-clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
         clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
       }
-    }
-    @media(max-width:768px){
       .menu-content-frame .left-menu .menu-list a{
         font-size: 1.5rem;
       }
@@ -281,13 +283,21 @@
       }
     }
     @media(max-width:500px){
+      .menu-content-frame .left-menu {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+      }
+      .menu-content-frame .menu-footer{
+        display:block;
+      }
       .menuexpand .logo {
         padding: 30px 20px 0px 20px;
       }
       .menuexpand .menu-content {
           width: 100%;
           pointer-events: unset;
-          padding: 50px 100px;
+          padding: 50px 20px 0px 20px;
       }
       .menuexpand .menu-content-frame {
           width: calc(100vw - 40px);
@@ -339,7 +349,9 @@
               </ul>
             </div>
             <div class="menu-footer">
-
+              <a href="" traget="_blank"><img src="sources/social/line.png"/></a>
+              <a href="" traget="_blank"><img src="sources/social/linkedin.png"/></a>
+              <a href="" traget="_blank"><img src="sources/social/codepen.png"/></a>
             </div>
           </div>
           <div class="right-menu"></div>
