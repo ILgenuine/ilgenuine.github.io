@@ -893,8 +893,6 @@
       .about-header-text p span{
         background-color: #c8c8c8;
       }
-
-
       @media(max-width:1200px){
         .about-header-frame {
           display: flex;
@@ -912,6 +910,37 @@
           left: unset;
           margin-top: -56px;
           text-transform: uppercase;
+        }
+        .about-header-text p {
+            width: 80vw;
+        }
+      }
+      @media(max-width:768px){
+        .about-img{
+          width: 80vw;
+          padding: 80px 40px 40px;
+        }
+        .image-frame {
+          height:450px;
+        }
+        .about-header-text {
+          font-size: 3rem;
+        }
+        .about-details-frame{
+          margin-top: -20px;
+        }
+        .about-header-text p {
+            width: 85vw;
+            font-size: 1rem;
+        }
+      }
+      @media(max-width:500px){
+        .about-img{
+          width: 96vw;
+          padding: 60px 20px 20px;
+        }
+        .image-frame {
+          height:350px;
         }
       }
     </style>
