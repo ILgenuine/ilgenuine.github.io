@@ -11,6 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
 
     <style>
+    section {
+      content-visibility: auto;
+      contain-intrinsic-size: 1px 100vh;
+    }
+
     @font-face {
         font-family: 'ringsofsaturnregular';
         src: url('asset/font/oxiut-webfont.woff2') format('woff2'),
@@ -341,83 +346,7 @@
       }
     }
     /* END Menu expand */
-
-
     </style>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="asset/style.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
-  </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbarspy" data-bs-offset="50">
-    <div class="menu-content">
-      <div class="menu-content-frame">
-          <div class="left-menu">
-            <div class="menu-list">
-              <ul id="navbarspy">
-                <li class="nav-item">
-                  <a class="nav-link" href="#home">home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">about me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#portfolio">portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">contact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#playgound">my playgound</a>
-                </li>
-              </ul>
-              <div class="social-icon">
-                <a href="" traget="_blank"><img src="sources/social/line.png"/></a>
-                <a href="" traget="_blank"><img src="sources/social/linkedin.png"/></a>
-                <a href="" traget="_blank"><img src="sources/social/codepen.png"/></a>
-              </div>
-            </div>
-            <div class="menu-footer">
-              <p>
-                093-587-9944<br>
-                infx@live.se
-              </p>
-            </div>
-          </div>
-          <div class="right-menu"></div>
-      </div>
-    </div>
-    <header>
-      <div class="logo">
-        <a href="#">※KK</a>
-      </div>
-      <div class="menu-frame">
-        <div class="menu-icon">
-          <i class="icon">
-  					<span class="line"></span>
-  					<span class="line"></span>
-  					<span class="line"></span>
-  				</i>
-        </div>
-        <div class="menu-text">
-          <div><span>M</span></div>
-          <div><span>E</span></div>
-          <div><span>N</span></div>
-          <div><span>U</span></div>
-        </div>
-      </div>
-      <div class="social">
-        <a href="" traget="_blank"><img src="sources/social/line.png"/></a>
-        <a href="" traget="_blank"><img src="sources/social/linkedin.png"/></a>
-        <a href="" traget="_blank"><img src="sources/social/codepen.png"/></a>
-      </div>
-    </header>
-
-
     <style>
     /* Intro section */
     #home{
@@ -442,7 +371,7 @@
       font-size: 2.5rem;
       line-height: 1;
       margin-bottom:20px;
-      text-shadow: 2px 1px 0px rgb(255 0 162), -2px 1px 0px rgb(0 225 255);
+      /* text-shadow: 2px 1px 0px rgb(255 0 162), -2px 1px 0px rgb(0 225 255); */
     }
     .intro-details .intro-name{
       display: inline-block;
@@ -461,76 +390,76 @@
       line-height: 1;
     }
     @-webkit-keyframes clip-text {
-    	from {
-    		-webkit-clip-path: inset(0 100% 0 0);
-    		        clip-path: inset(0 100% 0 0);
-    	}
-    	to {
-    		-webkit-clip-path: inset(0 0 0 0);
-    		        clip-path: inset(0 0 0 0);
-    	}
+      from {
+        -webkit-clip-path: inset(0 100% 0 0);
+                clip-path: inset(0 100% 0 0);
+      }
+      to {
+        -webkit-clip-path: inset(0 0 0 0);
+                clip-path: inset(0 0 0 0);
+      }
     }
     @keyframes clip-text {
-    	from {
-    		-webkit-clip-path: inset(0 100% 0 0);
-    		        clip-path: inset(0 100% 0 0);
-    	}
-    	to {
-    		-webkit-clip-path: inset(0 0 0 0);
-    		        clip-path: inset(0 0 0 0);
-    	}
+      from {
+        -webkit-clip-path: inset(0 100% 0 0);
+                clip-path: inset(0 100% 0 0);
+      }
+      to {
+        -webkit-clip-path: inset(0 0 0 0);
+                clip-path: inset(0 0 0 0);
+      }
     }
     @-webkit-keyframes text-revealer {
-    	0%, 50% {
-    		transform-origin: 0 50%;
-    	}
-    	60%, 100% {
-    		transform-origin: 100% 50%;
-    	}
-    	60% {
-    		transform: scaleX(1);
-    	}
-    	100% {
-    		transform: scaleX(0);
-    	}
+      0%, 50% {
+        transform-origin: 0 50%;
+      }
+      60%, 100% {
+        transform-origin: 100% 50%;
+      }
+      60% {
+        transform: scaleX(1);
+      }
+      100% {
+        transform: scaleX(0);
+      }
     }
     @keyframes text-revealer {
-    	0%, 50% {
-    		transform-origin: 0 50%;
-    	}
-    	60%, 100% {
-    		transform-origin: 100% 50%;
-    	}
-    	60% {
-    		transform: scaleX(1);
-    	}
-    	100% {
-    		transform: scaleX(0);
-    	}
+      0%, 50% {
+        transform-origin: 0 50%;
+      }
+      60%, 100% {
+        transform-origin: 100% 50%;
+      }
+      60% {
+        transform: scaleX(1);
+      }
+      100% {
+        transform: scaleX(0);
+      }
     }
     .reveal-text,.reveal-text::after {
-    	-webkit-animation-delay: var(--animation-delay, 3s);
-    	        animation-delay: var(--animation-delay, 3s);
-    	-webkit-animation-iteration-count: var(--iterations, 1);
-    	        animation-iteration-count: var(--iterations, 1);
-    	-webkit-animation-duration: var(--duration, 1800ms);
-    	        animation-duration: var(--duration, 1800ms);
-    	-webkit-animation-fill-mode: both;
-    	        animation-fill-mode: both;
-    	-webkit-animation-timing-function: cubic-bezier(0.0, 0.2, 0.5, 1);
-    	        animation-timing-function: cubic-bezier(0.0, 0.2, 0.5, 1);
+      -webkit-animation-delay: var(--animation-delay, 3s);
+              animation-delay: var(--animation-delay, 3s);
+      -webkit-animation-iteration-count: var(--iterations, 1);
+              animation-iteration-count: var(--iterations, 1);
+      -webkit-animation-duration: var(--duration, 1800ms);
+              animation-duration: var(--duration, 1800ms);
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both;
+      -webkit-animation-timing-function: cubic-bezier(0.0, 0.2, 0.5, 1);
+              animation-timing-function: cubic-bezier(0.0, 0.2, 0.5, 1);
     }
     .reveal-text {
-    	--animation-delay: var(--delay, 3);
-    	--animation-duration: var(--duration, 1800ms);
-    	--animation-iterations: var(--iterations, 1);
-    	position: relative;
-    	font-size: 10vw;
-    	-webkit-animation-name: clip-text;
-    	        animation-name: clip-text;
-    	color: #FFF;
-    	white-space: nowrap;
-    	cursor: default
+      --animation-delay: var(--delay, 3);
+      --animation-duration: var(--duration, 1800ms);
+      --animation-iterations: var(--iterations, 1);
+      position: relative;
+      font-size: 10vw;
+      -webkit-animation-name: clip-text;
+              animation-name: clip-text;
+      color: #FFF;
+      white-space: nowrap;
+      cursor: default
     }
     .reveal-text {
       --animation-delay: var(--delay, 3);
@@ -545,20 +474,20 @@
       cursor: default
     }
     .reveal-text::after {
-  		content: "";
-  		position: absolute;
-  		z-index: 999;
-  		top: 0;
-  		left: 0;
-  		right: 0;
-  		bottom: 0;
-  		background-color: #f2f98b;
-  		transform: scaleX(0);
-  		transform-origin: 0 50%;
-  		pointer-events: none;
-  		-webkit-animation-name: text-revealer;
-  		        animation-name: text-revealer;
-  	}
+      content: "";
+      position: absolute;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #f2f98b;
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+      pointer-events: none;
+      -webkit-animation-name: text-revealer;
+              animation-name: text-revealer;
+    }
     .intro-details .intro-name:before{
       background-color: #2196f3;
       content: "";
@@ -697,6 +626,78 @@
     /* END Intro section */
     </style>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="asset/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbarspy" data-bs-offset="50">
+    <div class="menu-content">
+      <div class="menu-content-frame">
+          <div class="left-menu">
+            <div class="menu-list">
+              <ul id="navbarspy">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">about me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#playgound">my playgound</a>
+                </li>
+              </ul>
+              <div class="social-icon">
+                <a href="https://line.me/ti/p/~ilgenuinework" traget="_blank"><img src="sources/social/line.png"/></a>
+                <a href="" traget="_blank"><img src="sources/social/linkedin.png"/></a>
+                <a href="" traget="_blank"><img src="sources/social/codepen.png"/></a>
+              </div>
+            </div>
+            <div class="menu-footer">
+              <p>
+                093-587-9944<br>
+                infx@live.se
+              </p>
+            </div>
+          </div>
+          <div class="right-menu"></div>
+      </div>
+    </div>
+    <header>
+      <div class="logo">
+        <a href="#">※KK</a>
+      </div>
+      <div class="menu-frame">
+        <div class="menu-icon">
+          <i class="icon">
+  					<span class="line"></span>
+  					<span class="line"></span>
+  					<span class="line"></span>
+  				</i>
+        </div>
+        <div class="menu-text">
+          <div><span>M</span></div>
+          <div><span>E</span></div>
+          <div><span>N</span></div>
+          <div><span>U</span></div>
+        </div>
+      </div>
+      <div class="social">
+        <a href="https://line.me/ti/p/~ilgenuinework" traget="_blank"><img src="sources/social/line.png"/></a>
+        <a href="" traget="_blank"><img src="sources/social/linkedin.png"/></a>
+        <a href="" traget="_blank"><img src="sources/social/codepen.png"/></a>
+      </div>
+    </header>
+
     <section id="home">
         <div class="intro-frame">
            <div class="intro-details">
@@ -715,6 +716,229 @@
     </section>
 
 
+
+    <style>
+      #about{
+        min-height: 100vh;
+        padding:50px 0px;
+      }
+      .about-header-frame{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-85%,-85%);
+      }
+      .about-img{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 600px;
+        border-radius: 2px;
+        box-shadow: 2px 2px 7px 4px rgb(0 0 0 / 15%);
+        padding: 111px 40px 40px;
+        background: url('sources/chrome_top.png') top no-repeat white;
+        background-size: 100% auto;
+        position:relative;
+        overflow: hidden;
+        height: auto;
+      }
+      .image-frame:after, .image:before, .image:after, .image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .image:before, body:before {
+        background-image: url('sources/profile/profile-10.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .image {
+        mix-blend-mode: darken;
+      }
+      .image:before {
+        filter: grayscale(0);
+      }
+      .image:after {
+        mix-blend-mode: screen;
+      }
+      .image:before, .image:after {
+        content: "";
+      }
+      .image-frame {
+        width: auto;
+        height:500px;
+        position: relative;
+        overflow: hidden;
+      }
+      .image-frame:after {
+        content: "";
+        border: 1px solid white;
+        mix-blend-mode: overlay;
+        opacity: 0.4;
+      }
+      .image-1:after {
+        background-color: red;
+      }
+      .image-2 {
+        opacity: 0.7;
+        transform: scale(1.02);
+      }
+      .image-2:after {
+        background-color: lime;
+      }
+      .image-3 {
+        opacity: 0.7;
+        transform: scale(1.04);
+      }
+      .image-3:after {
+        background-color: blue;
+      }
+      .about-details-frame{
+        position: absolute;
+        top: 15%;
+        left: 46%;
+      }
+      .about-header-text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 5rem;
+        line-height: 1;
+        color: #000000;
+        position: relative;
+        margin: 0 auto;
+      }
+      .about-header-text::after {
+        content: attr(data-text);
+        position: absolute;
+        left: 2px;
+        text-shadow: -1px 0 red;
+        top: 0;
+        color: #000000;
+        overflow: hidden;
+        clip: rect(0, 900px, 0, 0);
+        animation: noise-anim 2s infinite linear alternate-reverse;
+      }
+      .about-header-text::before {
+        content: attr(data-text);
+        position: absolute;
+        left: -2px;
+        text-shadow: 1px 0 blue;
+        top: 0;
+        color: #000000;
+        overflow: hidden;
+        clip: rect(0, 900px, 0, 0);
+        animation: noise-anim-2 3s infinite linear alternate-reverse;
+      }
+      @keyframes noise-anim {
+        0% {clip: rect(89px, 9999px, 18px, 0);}
+        5% {clip: rect(78px, 9999px, 29px, 0);}
+        10% {clip: rect(95px, 9999px, 1px, 0);}
+        15% {clip: rect(47px, 9999px, 92px, 0);}
+        20% {clip: rect(69px, 9999px, 66px, 0);}
+        25% {clip: rect(34px, 9999px, 10px, 0);}
+        30% {clip: rect(48px, 9999px, 69px, 0);}
+        35% {clip: rect(36px, 9999px, 8px, 0);}
+        40% {clip: rect(33px, 9999px, 12px, 0);}
+        45% {clip: rect(22px, 9999px, 69px, 0);}
+        50% {clip: rect(43px, 9999px, 82px, 0);}
+        55% {clip: rect(39px, 9999px, 73px, 0);}
+        60% {clip: rect(11px, 9999px, 96px, 0);}
+        65% {clip: rect(62px, 9999px, 12px, 0);}
+        70% {clip: rect(29px, 9999px, 35px, 0);}
+        75% {clip: rect(46px, 9999px, 95px, 0);}
+        80% {clip: rect(77px, 9999px, 26px, 0);}
+        85% {clip: rect(100px, 9999px, 90px, 0);}
+        90% {clip: rect(41px, 9999px, 72px, 0);}
+        95% {clip: rect(37px, 9999px, 66px, 0);}
+        100% {clip: rect(86px, 9999px, 99px, 0);}
+      }
+      @keyframes noise-anim-2 {
+        0% {clip: rect(22px, 9999px, 65px, 0);}
+        5% {clip: rect(37px, 9999px, 9px, 0);}
+        10% {clip: rect(74px, 9999px, 17px, 0);}
+        15% {clip: rect(100px, 9999px, 50px, 0);}
+        20% {clip: rect(57px, 9999px, 74px, 0);}
+        25% {clip: rect(20px, 9999px, 48px, 0);}
+        30% {clip: rect(96px, 9999px, 84px, 0);}
+        35% {clip: rect(100px, 9999px, 78px, 0);}
+        40% {clip: rect(15px, 9999px, 27px, 0);}
+        45% {clip: rect(80px, 9999px, 30px, 0);}
+        50% {clip: rect(21px, 9999px, 9px, 0);}
+        55% {clip: rect(8px, 9999px, 56px, 0);}
+        60% {clip: rect(1px, 9999px, 65px, 0);}
+        65% {clip: rect(4px, 9999px, 51px, 0);}
+        70% {clip: rect(52px, 9999px, 54px, 0);}
+        75% {clip: rect(64px, 9999px, 75px, 0);}
+        80% {clip: rect(35px, 9999px, 89px, 0);}
+        85% {clip: rect(73px, 9999px, 57px, 0);}
+        90% {clip: rect(82px, 9999px, 14px, 0);}
+        95% {clip: rect(16px, 9999px, 53px, 0);}
+        100% {clip: rect(32px, 9999px, 71px, 0);}
+      }
+      .about-header-text p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 2;
+        color: #000000;
+        position: relative;
+        margin: 0 auto;
+        text-transform: unset;
+        width: 630px;
+      }
+      .about-header-text p span{
+        background-color: #c8c8c8;
+      }
+
+
+      @media(max-width:1200px){
+        .about-header-frame {
+          display: flex;
+          position: relative;
+          justify-content: center;
+          top:unset;
+          left:unset;
+          transform: unset;
+        }
+        .about-details-frame{
+          display: flex;
+          position: relative;
+          justify-content: center;
+          top: unset;
+          left: unset;
+          margin-top: -56px;
+          text-transform: uppercase;
+        }
+      }
+    </style>
+    <section id="about">
+              <div class="about-header-frame">
+                  <div class="about-img">
+                      <figure class="image-frame">
+                        <figure class="image image-1"></figure>
+                        <figure class="image image-2"></figure>
+                        <figure class="image image-3"></figure>
+                      </figure>
+                  </div>
+              </div>
+              <div class="about-details-frame">
+                <div class="about-header-text" data-text="About Me">
+                    About Me<br>
+                    <p>
+                    <span>
+                      Frontend developer with almost 4 year of experience. I’ve developed a lot of projects and I’m focusing on learning new things, e.g., javascript framework and 3d animation. Seeking to leverage my technical and professional expertise to grow in the role of frontend developer.
+                    </span>
+                    </p>
+                </div>
+              </div>
+    </section>
+
+
+
+
     <section id="portfolio">
       <div class="port-banner">
         <img src="sources/white.png">
@@ -730,57 +954,99 @@
       </div>
     </section>
 
+    <!-- <style>
+        .left-col p{
+          font-size: 0.9rem;
+          font-family: 'Montserrat' , sans-serif;
+          font-weight: 700;
+        }
+        .right-col p{
+          font-size: 0.9rem;
+          font-family: 'Montserrat' , sans-serif;
+          font-weight: 700;
+        }
+    </style>
+    <footer>
+      <div class="row">
+        <div class="col-6 col-md-3 left-col">
+            <p>Contact</p>
+        </div>
+        <div class="col-6 col-md-5 right-col">
+          <p>
+            093-587-9944<br>
+            infx@live.se
+          </p>
+        </div>
+      </div>
+    </footer> -->
+
     <script>
-          function randomimg(){
-            var random = Math.floor((Math.random() * 13) + 1);
-            var url = String("url('sources/profile/profile-"+random+".jpg')");
-            $('.intro-pic').attr('style', "background:"+url+";background-position: 50% 50%;background-size: cover;background-repeat: no-repeat;");
-          }
-          $(".menu-frame").on('click', function(){
-            $("body").toggleClass('menuexpand');
-            $("body").removeClass('menuehover');
-          });
+      function randomimg(){
+        var random = Math.floor((Math.random() * 13) + 1);
+        var url = String("url('sources/profile/profile-"+random+".jpg')");
+        $('.intro-pic').attr('style', "background:"+url+";background-position: 50% 50%;background-size: cover;background-repeat: no-repeat;");
+      }
+      $(".menu-frame").on('click', function(){
+        $("body").toggleClass('menuexpand');
+        $("body").removeClass('menuehover');
+      });
 
-          $(".menu-frame").on('mouseenter', function(){
-            if($("body").hasClass('menuexpand')){
+      $(".menu-frame").on('mouseenter', function(){
+        if($("body").hasClass('menuexpand')){
 
-            }
-            else{
-              $("body").addClass('menuehover');
-            }
-          });
-          $(".menu-frame").on('mouseleave', function(){
-            if($("body").hasClass('menuexpand')){
+        }
+        else{
+          $("body").addClass('menuehover');
+        }
+      });
+      $(".menu-frame").on('mouseleave', function(){
+        if($("body").hasClass('menuexpand')){
 
-            }
-            else{
-              $("body").removeClass('menuehover');
-            }
-          });
-
+        }
+        else{
+          $("body").removeClass('menuehover');
+        }
+      });
+      setTimeout(function(){
+          $('.intro-pic').addClass('animate');
           setTimeout(function(){
-              $('.intro-pic').addClass('animate');
-              setTimeout(function(){
+            randomimg();
+            setTimeout(function(){
+              randomimg();
+              setInterval(function(){
                 randomimg();
-                setTimeout(function(){
-                  randomimg();
-                  setInterval(function(){
-                    randomimg();
-                  }, 8000);
-                }, 8000);
-              }, 4000);
-          }, 3000);
+              }, 8000);
+            }, 8000);
+          }, 4000);
+      }, 3000);
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
-    $(".menu-content-frame .left-menu .menu-list .nav-link").on('click', function(){
-        $("body").removeClass("menuexpand");
-    });
-    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-      target: '#navbarspy'
-    });
+      $(".menu-content-frame .left-menu .menu-list .nav-link").on('click', function(){
+          $("body").removeClass("menuexpand");
+      });
+      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#navbarspy'
+      });
+
+      // About
+      function normalizeOffset(offset, dimension) {
+        return -2 / dimension * offset + 1;
+      }
+      let image2 = document.querySelector('.image-2');
+      let image3 = document.querySelector('.image-3');
+      window.addEventListener('mousemove', function (e) {
+        let normal = {
+          x: normalizeOffset(e.clientX, window.innerWidth),
+          y: normalizeOffset(e.clientY, window.innerHeight) };
+        image2.style.left = `${Math.floor(normal.x * 4)}px`;
+        image2.style.top = `${Math.floor(normal.y * 4)}px`;
+
+        image3.style.left = `${Math.floor(-normal.x * 4)}px`;
+        image3.style.top = `${Math.floor(-normal.y * 4)}px`;
+      });
     </script>
 
     <!--
