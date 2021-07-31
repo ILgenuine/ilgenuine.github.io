@@ -44,6 +44,28 @@
   height: 10vh;
   z-index: 1;
 }
+.under-development{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffbd00e8;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+.under-development span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 7vmin;
+  color: #000000;
+  text-align: center;
+  width: fit-content;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
 @media(min-width:768px){
   #header{
     height:80vh;
