@@ -626,9 +626,10 @@ footer p span:last-of-type{
 }
 .text-col{
   display: flex;
+  justify-content: center;
 }
 .text-col.left{
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
 }
 #portal .moveinright, #portal .moveinleft{
   align-self: center;
