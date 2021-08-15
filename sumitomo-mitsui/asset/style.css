@@ -536,9 +536,6 @@ footer p span:last-of-type{
 @media(max-width:992px){
   #welcome{
     min-height: 70vh;
-    padding:100px 0px 60px 0px;
-    position:relative;
-    display: flex;
   }
   .bluegoo{
     top:unset;
