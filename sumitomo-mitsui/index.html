@@ -17,8 +17,26 @@
         overflow-x: hidden;
         font-family: 'Open Sans', sans-serif!important;
       }
-
-
+      .order-6{
+          order: 6!important;
+      }
+      .order-7{
+          order: 7!important;
+      }
+      .order-8 {
+          order: 8!important;
+      }
+      @media (min-width: 768px){
+        .order-md-6 {
+            order: 6!important;
+        }
+        .order-md-7 {
+            order: 7!important;
+        }
+        .order-md-8 {
+            order: 8!important;
+        }
+      }
     </style>
 
     <link rel="stylesheet" href="asset/style.css">
@@ -120,7 +138,6 @@
               </svg>
               <div class="slide__text">
                 <h2 class="slide__text-heading">We are always happy to serve "you"</h2>
-                <!-- <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p> -->
               </div>
             </div>
           </div>
@@ -132,7 +149,6 @@
               </svg>
               <div class="slide__text">
                 <h2 class="slide__text-heading">Answer 24 network emegency call</h2>
-                <!-- <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p> -->
               </div>
             </div>
           </div>
@@ -144,7 +160,6 @@
               </svg>
               <div class="slide__text">
                 <h2 class="slide__text-heading">Driving beyond... with you</h2>
-                <!-- <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p> -->
               </div>
             </div>
           </div>
@@ -152,6 +167,96 @@
       </div>
     </section>
 
+
+    <section id="welcome">
+      <div class="bluegoo">
+        <img src="sources/bluegoo.svg">
+      </div>
+      <div class="container">
+        <div class="welcome-header-text">
+          <h2 class="welcome-text hasanimate fadeleft">Welcome To</h2>
+          <h2 class="welcome-compamy hasanimate fadeleft">Sumimoto Mitsui Auto Leasing & Service</h2>
+        </div>
+        <div  class="welcome-details-text">
+          <p class="hasanimate fadeleft">
+            Among the merits a company can realize by car leasing instead of buying them, perhaps the most attractive is the saving from reducing multi work of maintenance and management. Sumitomo Mitsui Auto Leasing & Service (Thailand) Co., Ltd. (SMAT) had advised customer the best solution in management of vehicles.
+          </p>
+          <p class="hasanimate fadeleft">
+            As the leading fleet and vehicle management company, our goal is to deliver the best offer to our customer and to the market. Whatever your requirement, you can be assured that SMAT will design special package to serve you and your business effectively.
+          </p>
+        </div>
+      </div>
+      <div class="lightbluegoo">
+        <img src="sources/lightbluegoo.svg">
+      </div>
+    </section>
+
+    <section id="portal">
+      <div class="lightbluegoo-2">
+        <img src="sources/lightbluegoo.svg">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 mb-5 order-1">
+            <div class="moveinleft">
+              <div class="protal-img">
+                <img src="sources/silhouette-confident-businesspeople.jpg"/>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-5 order-2 text-col">
+            <div class="moveinright">
+              <div class="protal-details">
+                <a href=""><p>About Us <span>></span></p></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-5 order-3 order-md-4">
+            <div class="moveinright">
+              <div class="protal-img">
+                <img src="sources/luxury-car-interior.jpg"/>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-5 order-4 order-md-3 text-col left">
+            <div class="moveinleft">
+              <div class="protal-details">
+                <a href=""><p>Product & Service <span>></span></p></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-5 order-5 order-md-6">
+            <div class="moveinleft">
+              <div class="protal-img">
+                <img src="sources/globe-technology-business-with-gradient-wallpaper.jpg"/>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-5 order-6 order-md-5 text-col">
+            <div class="moveinright">
+              <div class="protal-details">
+                <a href=""><p>News <span>></span></p></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-5 order-7 order-md-8">
+            <div class="moveinright">
+              <div class="protal-img">
+                <img src="sources/touch-technology-business-using-background.jpg"/>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-5 order-8 order-md-7 text-col left">
+            <div class="moveinleft">
+              <div class="protal-details">
+                <a href=""><p>Contact Us <span>></span></p></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <footer>
       <div class="footer-frame">
@@ -408,7 +513,6 @@
           $("#herobanner").css("padding-top", headerheight + 'px');
         }, 300);
       });
-
       /* Animate function
       *****************************************/
       $(window).on('scroll load', function (){
@@ -443,9 +547,34 @@
       $(".menu-content-frame .left-menu .menu-list .nav-link").on('click', function(){
           $("body").removeClass("menuexpand");
       });
-
-
     </script>
+
+    <script src="asset/animate.js"></script>
+    <script>
+      window.onload = function () {
+        lax.init()
+        lax.addDriver('scrollY', function () {
+          return window.scrollY
+        })
+        lax.addElements('.moveinleft', {
+          scrollY: {
+            translateX: [
+              ["elInY", "elCenterY-200", "elOutY-400"],
+              ['-400', '0', 0]
+            ]
+          }
+        })
+        lax.addElements('.moveinright', {
+          scrollY: {
+            translateX: [
+              ["elInY", "elCenterY-200", "elOutY-400"],
+              ['400', '0', 0]
+            ]
+          }
+        })
+      }
+    </script>
+
 
   </body>
 </html>

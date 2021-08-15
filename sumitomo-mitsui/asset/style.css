@@ -1,3 +1,4 @@
+
 /* Nav
 *****************************************/
 header{
@@ -225,8 +226,6 @@ footer p span:last-of-type{
   }
 }
 
-
-
 /* Slide Css
 *****************************************/
 .slider-container {
@@ -452,5 +451,219 @@ footer p span:last-of-type{
 @media (max-width: 991px) {
   .slide__text-desc {
     display: none;
+  }
+}
+
+/* Welcome Section
+*****************************************/
+#welcome{
+  min-height: 100vh;
+  padding:100px 0px 60px 0px;
+  position:relative;
+  display: flex;
+}
+#welcome .container{
+  align-self:center;
+}
+.bluegoo{
+  position: absolute;
+  top: -340px;
+  right: -480px;
+  width: 1060px;
+  height: 1700px;
+  z-index: -1;
+  pointer-events: none;
+}
+.bluegoo img{
+  width: 100%;
+  height: 100%;
+}
+.lightbluegoo{
+  position: absolute;
+  bottom: -340px;
+  left: -480px;
+  width: 1060px;
+  height: 1700px;
+  z-index: -1;
+  pointer-events: none;
+}
+.lightbluegoo img{
+  width: 100%;
+  height: 100%;
+}
+.welcome-header-text{
+  margin-bottom:50px;
+}
+.welcome-header-text .welcome-text{
+  color: #01afef;
+  text-shadow: 2px 2px white;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.welcome-header-text .welcome-compamy{
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #01afef;
+  text-shadow: 2px 2px white;
+}
+.welcome-details-text{
+  max-width:1100px;
+}
+.welcome-details-text p{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+@media(max-width:1200px){
+  .bluegoo{
+    top: -250px;
+    right: -500px;
+    width: 800px;
+    height: 1200px;
+  }
+  .lightbluegoo{
+    bottom: -200px;
+    left: -150px;
+    width: 560px;
+    height: 1200px;
+  }
+  .welcome-header-text .welcome-text{
+    font-size: 2.5rem;
+  }
+  .welcome-header-text .welcome-compamy{
+    font-size: 3rem;
+  }
+}
+@media(max-width:992px){
+  #welcome{
+    min-height: 70vh;
+    padding:100px 0px 60px 0px;
+    position:relative;
+    display: flex;
+  }
+  .bluegoo{
+    top:unset;
+    bottom: -100px;
+    right: -550px;
+    width: 800px;
+    height: 800px;
+  }
+  .lightbluegoo{
+    top: -200px;
+    bottom:unset;
+    left: -350px;
+    width: 560px;
+    height: 1200px;
+  }
+  .welcome-header-text .welcome-text{
+    font-size: 1.8rem;
+  }
+  .welcome-header-text .welcome-compamy{
+    font-size: 2.1rem;
+  }
+  .welcome-details-text p{
+    text-align: justify;
+  }
+}
+
+@media(max-width:500px){
+  #welcome{
+    padding:60px 0px 60px 0px;
+  }
+  .bluegoo {
+      top: unset;
+      bottom: -100px;
+      right: -555px;
+      width: 700px;
+      height: 850px;
+  }
+  .welcome-header-text{
+    margin-bottom:20px;
+  }
+  .welcome-header-text .welcome-text{
+    font-size: 1.5rem;
+  }
+  .welcome-header-text .welcome-compamy{
+    font-size: 2rem;
+  }
+  .welcome-details-text p{
+    text-align: left;
+  }
+}
+
+
+/* Portal Section
+*****************************************/
+#portal{
+  min-height: 100vh;
+  padding:100px 0px 60px 0px;
+  position:relative;
+  overflow: hidden;
+  display: flex;
+}
+.lightbluegoo-2{
+  position: absolute;
+  bottom: -600px;
+  right: -480px;
+  width: 2000px;
+  height: 1700px;
+  z-index: -1;
+  pointer-events: none;
+  transform: rotate(100deg);
+}
+.lightbluegoo-2 img{
+  width: 100%;
+  height: 100%;
+}
+.protal-img{
+  margin: auto;
+  max-width: 500px;
+  width:30vw;
+  box-shadow: 8px 8px 0px 0px rgb(1 175 238);
+}
+.protal-img img{
+  width:100%;
+  height:auto;
+}
+.text-col{
+  display: flex;
+}
+.text-col.left{
+  justify-content: flex-end;
+}
+#portal .moveinright, #portal .moveinleft{
+  align-self: center;
+}
+.protal-details a{
+  display: block;
+  position:relative;
+  text-decoration: none;
+}
+.protal-details  span{
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(47%, -44%);
+  transition: all 0.35s ease-in;
+}
+.protal-details a:hover span{
+    transform: translate(100%, -44%);
+}
+.protal-details p{
+  color: #01afef;
+  text-shadow: 2px 2px #95d4ff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+@media(max-width:992px){
+  .protal-img{
+    width:40vw;
+  }
+  .text-col{
+    justify-content: center!important;
+  }
+}
+@media(max-width:768px){
+  .protal-img{
+    width:100%;
   }
 }
